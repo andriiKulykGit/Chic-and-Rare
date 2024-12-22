@@ -1,0 +1,61 @@
+.categories {
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 24px;
+		&_hidden {
+			display: none;
+		}
+	}
+	&__cell {
+        position: relative;
+		overflow: hidden;
+		border-radius: 16px;
+		&:first-of-type {
+			grid-row: 1 / 3;
+		}
+		&:hover {
+			@include hover() {
+				.categories {
+                    &__img {
+                        scale: 1.1;
+                    }
+                    &__title {
+                        transform: translateX(-50%);
+                    }
+                }
+			}
+		}
+	}
+	&__img {
+		border-radius: 16px;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition-duration: 0.3s;
+	}
+    &__title {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        bottom: 24px;
+        transform: translateX(-50%);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1;
+        padding: 10px 50px;
+        border-radius: 36px;
+        color: $bg;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        width: fit-content;
+        overflow: hidden;
+        transition: border-radius 0.1s ease-in-out
+    }
+}

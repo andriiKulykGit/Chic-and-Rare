@@ -1,0 +1,19 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 8px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+    }
+
+    &__list {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__item {
+    }
+}

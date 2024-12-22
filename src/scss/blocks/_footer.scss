@@ -1,0 +1,148 @@
+.footer {
+	padding-bottom: 24px;
+	padding-top: 80px;
+	&__warpper {
+		padding: 24px;
+		padding-bottom: 20px;
+		background: $footer-bg;
+		border-radius: 16px;
+	}
+	&__top {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 64px 24px;
+		padding-bottom: 48px;
+	}
+	&__bottom {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap-reverse;
+		gap: 12px;
+		justify-content: space-between;
+		padding-top: 16px;
+		&:before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background-color: #d9d9d9;
+		}
+	}
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px;
+		font-size: 14px;
+	}
+	&__links {
+		display: flex;
+		gap: 32px;
+	}
+	&__list {
+		width: 114px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__link {
+		position: relative;
+		color: $text-color;
+		// transition: color 0.1s ease-in;
+		font-size: 14px;
+		&::before {
+			position: absolute;
+			content: "";
+			top: 100%;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background-color: currentColor;
+			scale: 0 1;
+			transition: scale 0.2s ease-in;
+			transform-origin: right;
+		}
+		&:hover {
+			@include hover() {
+				&:before {
+					scale: 1;
+					transform-origin: left;
+				}
+			}
+		}
+	}
+	&__copyright {
+		font-size: 12px;
+		line-height: 1;
+		opacity: 0.6;
+	}
+}
+
+.pay-methods {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding-top: 10px;
+}
+
+.copyright {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 32px;
+	&__link {
+		position: relative;
+		color: $text-color;
+		opacity: 0.6;
+		line-height: 1;
+		font-size: 12px;
+		&::before {
+			position: absolute;
+			content: "";
+			top: 100%;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background-color: currentColor;
+			scale: 0 1;
+			transition: scale 0.2s ease-in;
+			transform-origin: right;
+		}
+		&:hover {
+			@include hover() {
+				&:before {
+					scale: 1;
+					transform-origin: left;
+				}
+			}
+		}
+	}
+}
+
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	max-width: 100%;
+	width: 388px;
+	&__title {
+		font-size: 16px;
+		line-height: 1;
+		font-weight: 700;
+	}
+
+	&__subtitle {
+		color: $accent;
+		font-size: 14px;
+		line-height: 1;
+		font-weight: 600;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		max-width: 100%;
+	}
+}

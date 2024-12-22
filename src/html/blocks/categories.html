@@ -1,0 +1,46 @@
+<section class="section">
+    <h2 class="visually-hidden">Catalog</h2>
+    <div class="container">
+        <div class="section__inner">
+            <div class="section__headline">
+                <div class="section__title">Categories</div>
+                <a href="#" class="btn">
+                    <span class="btn__text">show all</span>
+                </a>
+            </div>
+            @@include('switcher.html', {
+                'area': 'categories'
+            })
+        </div>
+        <div class="categories">
+            <div class="categories__wrapper categories__wrapper_active">
+                <a class="categories__cell" href="#">
+                    <h3 class="categories__title">Pants</h3>
+                    <img src="../../img/categories-1.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async">
+                </a>
+                <a class="categories__cell" href="#">
+                    <h3 class="categories__title">Shoes</h3>
+                    <img src="../../img/categories-2.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async">
+                </a>
+                <a class="categories__cell" href="#">
+                    <h3 class="categories__title">Accessories</h3>
+                    <img src="../../img/categories-3.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async">
+                </a>
+            </div>
+            <div class="categories__wrapper categories__wrapper_hidden">
+                <a class="categories__cell" href="#">
+                    <h3 class="categories__title">Pants</h3>
+                    <img src="../../img/categories-men-1.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async">
+                </a>
+                <a class="categories__cell" href="#">
+                    <h3 class="categories__title">Shoes</h3>
+                    <img src="../../img/categories-men-2.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async">
+                </a>
+                <a class="categories__cell" href="#">
+                    <h3 class="categories__title">Accessories</h3>
+                    <img src="../../img/categories-men-3.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

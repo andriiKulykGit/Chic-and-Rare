@@ -1,0 +1,116 @@
+.icon {
+	--size: 24px;
+	fill: transparent;
+	stroke: transparent;
+	display: inline-block;
+	width: var(--size);
+	height: var(--size);
+	mask-size: cover;
+	mask-position: center;
+	mask-repeat: no-repeat;
+	vertical-align: middle;
+	&_large {
+		--size: 48px;
+	}
+	&_arrow {
+		mask-image: url(../img/svgicons/arrow.svg);
+		-webkit-mask-image: url(../img/svgicons/arrow.svg);
+		background-color: $text-color;
+	}
+	&_cart {
+		mask-image: url(../img/svgicons/cart.svg);
+		-webkit-mask-image: url(../img/svgicons/cart.svg);
+		background-color: $text-color;
+	}
+	&_close {
+		mask-image: url(../img/svgicons/close.svg);
+		-webkit-mask-image: url(../img/svgicons/close.svg);
+		background-color: $text-color;
+	}
+	&_trash {
+		mask-image: url(../img/svgicons/trash.svg);
+		-webkit-mask-image: url(../img/svgicons/trash.svg);
+		background-color: $text-color;
+		transition-duration: .1s;
+	}
+	&_plus {
+		mask-image: url(../img/svgicons/plus.svg);
+		-webkit-mask-image: url(../img/svgicons/plus.svg);
+		background-color: $text-color;
+	}
+	&_minus {
+		mask-image: url(../img/svgicons/minus.svg);
+		-webkit-mask-image: url(../img/svgicons/minus.svg);
+		background-color: $text-color;
+	}
+	&_pay-method {
+		width: 32px;
+		height: 22px;
+		background-repeat: no-repeat;
+	}
+	&_t-shirt {
+		mask-image: url(../img/svgicons/t-shirt.svg);
+		-webkit-mask-image: url(../img/svgicons/t-shirt.svg);
+		background-color: $text-color;
+	}
+	&_brush {
+		mask-image: url(../img/svgicons/brush.svg);
+		-webkit-mask-image: url(../img/svgicons/brush.svg);
+		background-color: $text-color;
+	}
+	&_stars {
+		mask-image: url(../img/svgicons/stars.svg);
+		-webkit-mask-image: url(../img/svgicons/stars.svg);
+		background-color: $text-color;
+	}
+	&_star {
+		mask-image: url(../img/svgicons/star.svg);
+		-webkit-mask-image: url(../img/svgicons/star.svg);
+		background-color: $accent;
+		--size: clamp(54px, 8.8vw, 120px);
+		animation: rotate360 10s linear infinite;
+		max-height: 92px;
+		mask-size: var(--size);
+	}
+	&_person {
+		mask-image: url(../img/svgicons/person.svg);
+		-webkit-mask-image: url(../img/svgicons/person.svg);
+		background-color: $text-color;
+	}
+	&_maestro {
+		background-image: url(../img/svgicons/maestro.svg);
+	}
+	&_visa {
+		background-image: url(../img/svgicons/visa.svg);
+	}
+	&_mastercard {
+		background-image: url(../img/svgicons/master-card.svg);
+	}
+	&_amex {
+		background-image: url(../img/svgicons/amex.svg);
+	}
+	&_paypal {
+		background-image: url(../img/svgicons/paypal.svg);
+	}
+	&_applepay {
+		background-image: url(../img/svgicons/applepay.svg);
+	}
+	&_clearpay {
+		background-image: url(../img/svgicons/clearpay.svg);
+	}
+	&_google-pay {
+		background-image: url(../img/svgicons/google-pay.svg);
+	}
+	&_klarna {
+		background-image: url(../img/svgicons/klarna.svg);
+	}
+	&-container {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		--size: clamp(54px, 8.8vw, 92px);
+		width: var(--size);
+		height: var(--size);
+	}
+}

@@ -1,0 +1,18 @@
+.marquee {
+	overflow: hidden;
+	white-space: nowrap;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px 0;
+	background-color: $accent;
+	user-select: none;
+	&__wrapper {
+		display: flex;
+		will-change: transform;
+		animation: marquee 20s linear infinite forwards;
+		color: $bg;
+		font-size: 14px;
+		line-height: 1;
+		letter-spacing: 1px;
+	}
+}

@@ -1,0 +1,69 @@
+html {
+	scrollbar-gutter: stable;
+	scrollbar-width: thin;
+	scrollbar-color: $text-color $bg;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: var(--link-color);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	flex-grow: 1;
+	padding-top: 32px;
+}
+
+::selection {
+	background-color: $text-color;
+	color: $bg;
+}
+
+.link {
+	position: relative;
+	&::before {
+		position: absolute;
+		content: "";
+		top: 100%;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background-color: currentColor;
+		scale: 0 1;
+		transition: scale 0.2s ease-in;
+		transform-origin: right;
+	}
+	&:hover {
+		@include hover() {
+			&:before {
+				scale: 1;
+				transform-origin: left;
+			}
+		}
+	}
+}
+
+* {
+	accent-color: $accent;
+	&:focus {
+		outline: 2px solid $accent;
+	}
+}

@@ -1,0 +1,27 @@
+@@include('blocks/head.html')
+
+<body>
+	<div class="wrapper">
+		<div class="marquee" data-marquee-separator="•" aria-label="Winter sale" data-marquee-text="Winter sale">
+			<div class="marquee__wrapper">
+			</div>
+		</div>
+
+		@@include('blocks/header.html')
+
+		<main class="main">
+			@@include('blocks/hero.html')
+			@@include('blocks/catalog.html')
+			@@include('blocks/usps.html')
+			@@include('blocks/outfits.html')
+			@@include('blocks/categories.html')
+			@@include('blocks/faqs.html')
+		</main>
+
+		@@include('blocks/footer.html')
+		@@include('blocks/scripts.html')
+	</div>
+	@@include('blocks/cart.html')
+</body>
+
+</html>

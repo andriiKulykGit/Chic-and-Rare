@@ -1,0 +1,46 @@
+.switcher {
+	position: relative;
+	padding: 2px;
+	background-color: $sec-bg;
+	border-radius: 19px;
+	width: fit-content;
+	display: flex;
+
+	&__overlay {
+		position: absolute;
+		top: 2px;
+		bottom: 2px;
+		left: 2px;
+		background-color: $text-color;
+		min-width: 32px;
+		border-radius: 29px;
+		transition: left 0.2s ease-in-out, width 0.2s ease-in;
+		will-change: left;
+	}
+
+	&__btn {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 1;
+		padding: 10px 24px;
+		position: relative;
+		color: $text-color;
+		transition: color 0.2s ease-in-out, background-color 0.1s ease-in-out;
+		border-radius: 29px;
+
+		&:hover {
+			@include hover() {
+				background-color: rgba(0, 0, 0, 0.05);
+			}
+		}
+
+		&_active {
+			color: $bg;
+			&:hover {
+				@include hover() {
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}

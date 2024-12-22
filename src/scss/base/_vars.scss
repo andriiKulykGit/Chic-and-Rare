@@ -1,0 +1,28 @@
+:root {
+	--container-width: 1400px;
+	--container-padding: 15px;
+
+	--font-main: "Releway", sans-serif;
+
+	--page-bg: #fff;
+	--page-sec-bg: #f8f8f8;
+	--footer-bg: #f7f7f7;
+	--input-bg: #ececec;
+	--text-color: #111;
+	--accent: #639dcb;
+	--link-color: var(--accent);
+	--red: #C61818;
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+$accent: var(--accent);
+$text-color: var(--text-color);
+$bg: var(--page-bg);
+$sec-bg: var(--page-sec-bg);
+$link-color: var(--link-color);
+$footer-bg: var(--footer-bg);
+$input-bg: var(--input-bg);
+$red: var(--red);

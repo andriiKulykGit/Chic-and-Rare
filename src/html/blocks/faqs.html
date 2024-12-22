@@ -1,0 +1,36 @@
+<section class="section">
+	<h2 class="visually-hidden">FAQ</h2>
+	<div class="container">
+		<div class="faqs">
+			<div class="faqs__top">
+				<div class="faqs__btns">
+					<button class="btn btn_sm btn_outline -faqs-open-all" type="button" data-target=".faqs__list">
+						<span class="btn__text">open all</span>
+					</button>
+					<button class="btn btn_sm btn_outline -faqs-close-all" type="button" data-target=".faqs__list">
+						<span class="btn__text">close all</span>
+					</button>
+				</div>
+			</div>
+			<div class="faqs__bottom">
+				<div class="faqs__col faqs__col_left">
+					<div class="faqs__list">
+						@@loop('faq.html', [
+							{ "title": "Do you offer worldwide shipping?", "text": "lorem ipsum..." },
+							{ "title": "How can I return an item?", "text": "lorem ipsum..." },
+							{ "title": "What payment methods do you accept?", "text": "lorem ipsum..." },
+							{ "title": "Can I try on items before purchasing?", "text": "lorem ipsum..." },
+							{ "title": "How can I find out about discounts and promotions?", "text": "lorem ipsum..." },
+							{ "title": "Do you offer styling services?", "text": "lorem ipsum..." },
+							{ "title": "Can I order exclusive or limited-edition items?", "text": "lorem ipsum..." },
+						])
+					</div>
+					</div>
+					<div class="faqs__col faqs__col_right">
+						<img src="../../img/faqs.jpg" alt="image" width="688" height="516" decoding="async"
+							class="lozad faqs__img" />
+					</div>
+				</div>
+			</div>
+		</div>
+</section>

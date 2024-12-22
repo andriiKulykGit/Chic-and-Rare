@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chic and Rare</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="marquee" data-marquee-separator="•" aria-label="Winter sale" data-marquee-text="Winter sale">
+				<div class="marquee__wrapper"></div>
+			</div>
+
+			<header class="header">
+				<div class="container">
+					<div class="header__row">
+						<a class="header__logo" href="/">
+							<img src="./img/logo.svg" alt="Chic and Rare" width="186" />
+						</a>
+						<ul class="header__list">
+							<li class="header__item">
+								<button class="icon-btn icon-btn_active" type="button" data-popup-taget="cart">
+									<span class="visually-hidden">Cart</span>
+									<span class="icon icon_cart"></span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<div class="hero">
+					<div class="container">
+						<div class="hero-swiper swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="./img/hero-1.webp 1x, ./img/hero-1@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/hero-1.jpg 1x, ./img/hero-1@2x.jpg 2x" type="image/jpeg" />
+										<img loading="lazy" decoding="async" src="./img/hero-1.jpg" class="hero-swiper__img " alt="" width="1400" height="600" />
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="./img/hero-2.webp 1x, ./img/hero-2@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/hero-2.jpg 1x, ./img/hero-2@2x.jpg 2x" type="image/jpeg" />
+										<img loading="lazy" decoding="async" src="./img/hero-2.jpg" class="hero-swiper__img " alt="" width="1400" height="600" />
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="./img/hero-3.webp 1x, ./img/hero-3@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/hero-3.jpg 1x, ./img/hero-3@2x.jpg 2x" type="image/jpeg" />
+										<img loading="lazy" decoding="async" src="./img/hero-3.jpg" class="hero-swiper__img " alt="" width="1400" height="600" />
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="./img/hero-4.webp 1x, ./img/hero-4@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/hero-4.jpg 1x, ./img/hero-4@2x.jpg 2x" type="image/jpeg" />
+										<img loading="lazy" decoding="async" src="./img/hero-4.jpg" class="hero-swiper__img " alt="" width="1400" height="600" />
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="./img/hero-5.webp 1x, ./img/hero-5@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/hero-5.jpg 1x, ./img/hero-5@2x.jpg 2x" type="image/jpeg" />
+										<img loading="lazy" decoding="async" src="./img/hero-5.jpg" class="hero-swiper__img " alt="" width="1400" height="600" />
+									</picture>
+								</div>
+							</div>
+
+							<div class="hero-swiper__pagination"></div>
+
+							<div class="hero-swiper__btns">
+								<button class="hero-swiper__btn hero-swiper__btn_prev" type="button">
+									<span class="icon icon_arrow"></span>
+								</button>
+								<button class="hero-swiper__btn hero-swiper__btn_next" type="button">
+									<span class="icon icon_arrow"></span>
+								</button>
+							</div>
+
+							<!-- If we need scrollbar -->
+							<!-- <div class="swiper-scrollbar"></div> -->
+						</div>
+					</div>
+				</div>
+
+				<section class="section">
+					<h2 class="visually-hidden">Catalog</h2>
+					<div class="container">
+						<div class="section__inner">
+							<div class="section__subtitle">New collection 2024</div>
+							<div class="section__headline">
+								<div class="section__title">Newest</div>
+								<a href="#" class="btn">
+									<span class="btn__text">show all</span>
+								</a>
+							</div>
+							<div class="switcher" data-area="@@area">
+								<div class="switcher__overlay"></div>
+								<button class="switcher__btn switcher__btn_active" type="button">Women</button>
+								<button class="switcher__btn" type="button">Men</button>
+							</div>
+						</div>
+						<div class="section__cards">
+							<article class="card">
+								<div class="card__top">
+									<picture>
+										<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+									</picture>
+									<div class="sizes draggable-scroll">
+										<ul class="sizes__list scroll-content">
+											<li class="sizes__item"><button class="sizes__btn">XXS</button></li>
+											<li class="sizes__item"><button class="sizes__btn">XS</button></li>
+											<li class="sizes__item"><button class="sizes__btn">S</button></li>
+											<li class="sizes__item"><button class="sizes__btn">M</button></li>
+											<li class="sizes__item"><button class="sizes__btn">L</button></li>
+											<li class="sizes__item"><button class="sizes__btn">XL</button></li>
+										</ul>
+									</div>
+								</div>
+								<div class="card__bottom">
+									<div class="card__headline">
+										<a class="card__title" href="#">Dress</a>
+										<div class="card__price">199$</div>
+									</div>
+									<div class="card__brand">ViTi</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="visually-hidden">Unique Selling Propositions</h2>
+					<div class="container">
+						<ul class="usps">
+							<li class="usp">
+								<span class="icon icon_large icon_t-shirt"></span>
+								<h3 class="usp__title">Superior Quality</h3>
+								<p class="usp__text">Crafted from premium materials, our garments ensure durability, comfort, and a&#160;flawless fit.</p>
+							</li>
+							<li class="usp">
+								<span class="icon icon_large icon_brush"></span>
+								<h3 class="usp__title">Exclusive Design</h3>
+								<p class="usp__text">Stand out with limited-edition pieces designed to&#160;make a&#160;bold yet elegant statement.</p>
+							</li>
+							<li class="usp">
+								<span class="icon icon_large icon_stars"></span>
+								<h3 class="usp__title">Timeless Style</h3>
+								<p class="usp__text">Our collection transcends fleeting trends, offering pieces that remain relevant and stylish for years.</p>
+							</li>
+							<li class="usp">
+								<span class="icon icon_large icon_person"></span>
+								<h3 class="usp__title">Personalized Experience</h3>
+								<p class="usp__text">Enjoy a&#160;shopping experience tailored to&#160;your preferences, ensuring each piece feels uniquely yours.</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="visually-hidden">Catalog</h2>
+					<div class="container">
+						<div class="outfits">
+							<div class="outfits__col outfits__col_left">
+								<div class="outfits__title">
+									Exclusive Expert <span class="icon-container"><span class="icon icon_star"></span></span> Curated Outfits
+								</div>
+								<p class="outfits__text">
+									Discover the perfect look with our exclusive clothing sets, carefully curated by&#160;fashion experts. Each collection is designed to&#160;help
+									you shine effortlessly, no&#160;matter the occasion
+								</p>
+								<a href="#" class="btn btn_md">
+									<span class="btn__text">Explore the Collection</span>
+								</a>
+							</div>
+							<div class="outfits__col">
+								<picture>
+									<source srcset="./img/outfits.webp 1x, ./img/outfits@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/outfits.jpg 1x, ./img/outfits@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/outfits.jpg" class="outfits__img lozad" alt="model with exclusive outfit" width="688" />
+								</picture>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="visually-hidden">Catalog</h2>
+					<div class="container">
+						<div class="section__inner">
+							<div class="section__headline">
+								<div class="section__title">Categories</div>
+								<a href="#" class="btn">
+									<span class="btn__text">show all</span>
+								</a>
+							</div>
+							<div class="switcher" data-area="categories">
+								<div class="switcher__overlay"></div>
+								<button class="switcher__btn switcher__btn_active" type="button">Women</button>
+								<button class="switcher__btn" type="button">Men</button>
+							</div>
+						</div>
+						<div class="categories">
+							<div class="categories__wrapper categories__wrapper_active">
+								<a class="categories__cell" href="#">
+									<h3 class="categories__title">Pants</h3>
+									<picture>
+										<source srcset="./img/categories-1.webp 1x, ./img/categories-1@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/categories-1.jpg 1x, ./img/categories-1@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/categories-1.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async" />
+									</picture>
+								</a>
+								<a class="categories__cell" href="#">
+									<h3 class="categories__title">Shoes</h3>
+									<picture>
+										<source srcset="./img/categories-2.webp 1x, ./img/categories-2@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/categories-2.jpg 1x, ./img/categories-2@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/categories-2.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async" />
+									</picture>
+								</a>
+								<a class="categories__cell" href="#">
+									<h3 class="categories__title">Accessories</h3>
+									<picture>
+										<source srcset="./img/categories-3.webp 1x, ./img/categories-3@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/categories-3.jpg 1x, ./img/categories-3@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/categories-3.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async" />
+									</picture>
+								</a>
+							</div>
+							<div class="categories__wrapper categories__wrapper_hidden">
+								<a class="categories__cell" href="#">
+									<h3 class="categories__title">Pants</h3>
+									<picture>
+										<source srcset="./img/categories-men-1.webp 1x, ./img/categories-men-1@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/categories-men-1.jpg 1x, ./img/categories-men-1@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/categories-men-1.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async" />
+									</picture>
+								</a>
+								<a class="categories__cell" href="#">
+									<h3 class="categories__title">Shoes</h3>
+									<picture>
+										<source srcset="./img/categories-men-2.webp 1x, ./img/categories-men-2@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/categories-men-2.jpg 1x, ./img/categories-men-2@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/categories-men-2.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async" />
+									</picture>
+								</a>
+								<a class="categories__cell" href="#">
+									<h3 class="categories__title">Accessories</h3>
+									<picture>
+										<source srcset="./img/categories-men-3.webp 1x, ./img/categories-men-3@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/categories-men-3.jpg 1x, ./img/categories-men-3@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/categories-men-3.jpg" class="lozad categories__img" alt="image" width="688" height="786" decoding="async" />
+									</picture>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="visually-hidden">FAQ</h2>
+					<div class="container">
+						<div class="faqs">
+							<div class="faqs__top">
+								<div class="faqs__btns">
+									<button class="btn btn_sm btn_outline -faqs-open-all" type="button" data-target=".faqs__list">
+										<span class="btn__text">open all</span>
+									</button>
+									<button class="btn btn_sm btn_outline -faqs-close-all" type="button" data-target=".faqs__list">
+										<span class="btn__text">close all</span>
+									</button>
+								</div>
+							</div>
+							<div class="faqs__bottom">
+								<div class="faqs__col faqs__col_left">
+									<div class="faqs__list">
+										<div class="accordion">
+											<details class="accordion__details">
+												<summary class="accordion__summary">
+													<span class="accordion__title" role="term" aria-details="faq-1">Do&#160;you offer worldwide shipping?</span>
+												</summary>
+											</details>
+											<div class="accordion__content" id="faq-1" role="definition">
+												<div class="accordion__body">
+													<p>
+														lorem ipsum&#8230;
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<details class="accordion__details">
+												<summary class="accordion__summary">
+													<span class="accordion__title" role="term" aria-details="faq-1">How can I&#160;return an&#160;item?</span>
+												</summary>
+											</details>
+											<div class="accordion__content" id="faq-1" role="definition">
+												<div class="accordion__body">
+													<p>
+														lorem ipsum&#8230;
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<details class="accordion__details">
+												<summary class="accordion__summary">
+													<span class="accordion__title" role="term" aria-details="faq-1">What payment methods do&#160;you accept?</span>
+												</summary>
+											</details>
+											<div class="accordion__content" id="faq-1" role="definition">
+												<div class="accordion__body">
+													<p>
+														lorem ipsum&#8230;
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<details class="accordion__details">
+												<summary class="accordion__summary">
+													<span class="accordion__title" role="term" aria-details="faq-1">Can I&#160;try on&#160;items before purchasing?</span>
+												</summary>
+											</details>
+											<div class="accordion__content" id="faq-1" role="definition">
+												<div class="accordion__body">
+													<p>
+														lorem ipsum&#8230;
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<details class="accordion__details">
+												<summary class="accordion__summary">
+													<span class="accordion__title" role="term" aria-details="faq-1">How can I&#160;find out about discounts and promotions?</span>
+												</summary>
+											</details>
+											<div class="accordion__content" id="faq-1" role="definition">
+												<div class="accordion__body">
+													<p>
+														lorem ipsum&#8230;
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<details class="accordion__details">
+												<summary class="accordion__summary">
+													<span class="accordion__title" role="term" aria-details="faq-1">Do&#160;you offer styling services?</span>
+												</summary>
+											</details>
+											<div class="accordion__content" id="faq-1" role="definition">
+												<div class="accordion__body">
+													<p>
+														lorem ipsum&#8230;
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<details class="accordion__details">
+												<summary class="accordion__summary">
+													<span class="accordion__title" role="term" aria-details="faq-1">Can I&#160;order exclusive or&#160;limited-edition items?</span>
+												</summary>
+											</details>
+											<div class="accordion__content" id="faq-1" role="definition">
+												<div class="accordion__body">
+													<p>
+														lorem ipsum&#8230;
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="faqs__col faqs__col_right">
+									<picture>
+										<source srcset="./img/faqs.webp 1x, ./img/faqs@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/faqs.jpg 1x, ./img/faqs@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/faqs.jpg" alt="image" width="688" height="516" decoding="async" class="lozad faqs__img" />
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__warpper">
+						<div class="footer__top">
+							<div class="footer__inner">
+								<ul class="footer__list">
+									<li class="footer__li">
+										<span class="semi-bold">About</span>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">History</a>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Jobs</a>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Press</a>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Sustainability</a>
+									</li>
+								</ul>
+								<ul class="footer__list">
+									<li class="footer__li">
+										<span class="semi-bold">Info</span>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Shipping</a>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Help & FAQ</a>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Order info</a>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Returns</a>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Site map</a>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Guides</a>
+									</li>
+								</ul>
+								<ul class="footer__list">
+									<li class="footer__li">
+										<span class="semi-bold">Shopping</span>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Instagram</a>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Tik tok</a>
+									</li>
+									<li class="footer__li">
+										<a href="#" class="footer__link">Facebook</a>
+									</li>
+								</ul>
+								<ul class="footer__list">
+									<li class="footer__li">
+										<span class="semi-bold">Payment methods</span>
+										<div class="pay-methods">
+											<div role="tooltip" data-microtip-position="top" aria-label="Maestro">
+												<span class="visually-hidden">Maestro</span>
+												<span class="icon icon_pay-method icon_maestro"></span>
+											</div>
+											<div role="tooltip" data-microtip-position="top" aria-label="Visa">
+												<span class="visually-hidden">Visa</span>
+												<span class="icon icon_pay-method icon_visa"></span>
+											</div>
+											<div role="tooltip" data-microtip-position="top" aria-label="Mastercard">
+												<span class="visually-hidden">Mastercard</span>
+												<span class="icon icon_pay-method icon_mastercard"></span>
+											</div>
+											<div role="tooltip" data-microtip-position="top" aria-label="Amex">
+												<span class="visually-hidden">Amex</span>
+												<span class="icon icon_pay-method icon_amex"></span>
+											</div>
+											<div role="tooltip" data-microtip-position="top" aria-label="PayPal">
+												<span class="visually-hidden">PayPal</span>
+												<span class="icon icon_pay-method icon_paypal"></span>
+											</div>
+											<div role="tooltip" data-microtip-position="top" aria-label="Apple Pay">
+												<span class="visually-hidden">Apple Pay</span>
+												<span class="icon icon_pay-method icon_applepay"></span>
+											</div>
+											<div role="tooltip" data-microtip-position="top" aria-label="Clear pay">
+												<span class="visually-hidden">clear pay</span>
+												<span class="icon icon_pay-method icon_clearpay"></span>
+											</div>
+											<div role="tooltip" data-microtip-position="top" aria-label="Klarna">
+												<span class="visually-hidden">klarna</span>
+												<span class="icon icon_pay-method icon_klarna"></span>
+											</div>
+											<div role="tooltip" data-microtip-position="top" aria-label="Google pay">
+												<span class="visually-hidden">google pay</span>
+												<span class="icon icon_pay-method icon_google-pay"></span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<form action="#" class="newsletter">
+								<div class="newsletter__title">JOIN OUR NEWSLETTER</div>
+								<div class="newsletter__subtitle">
+									10% off for new subscribers
+								</div>
+								<fieldset class="newsletter__wrapper">
+									<legend class="visually-hidden">NEWSLETTER</legend>
+									<div class="input">
+										<input type="email" class="input__field" placeholder="example@gmail.com" required spellcheck="false" />
+										<button class="btn input__btn" type="submit">
+											<span class="btn__text">GET</span>
+										</button>
+									</div>
+									<label class="checkbox">
+										<input type="checkbox" class="checkbox__input" required />
+										<span class="checkbox__text">
+											I&#160;accept
+											<a class="link" href="#">privacy policy</a>
+										</span>
+									</label>
+								</fieldset>
+							</form>
+						</div>
+						<div class="footer__bottom">
+							<p class="footer__copyright">Chic and Rare &#169; 2022</p>
+							<ul class="copyright">
+								<li>
+									<a href="#" class="copyright__link">Terms of&#160;use</a>
+								</li>
+								<li>
+									<a href="#" class="copyright__link">Privacy policy</a>
+								</li>
+								<li>
+									<a href="#" class="copyright__link">Cookie Policy</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<script src="./js/index.bundle.js"></script>
+		</div>
+		<div class="pop-up pop-up_right pop-up_side-menu" id="cart" data-popup="cart">
+			<div class="pop-up__bg" data-popup-close="cart"></div>
+			<div class="cart">
+				<div class="cart__row cart__row_head">
+					<div class="cart__title">Cart</div>
+					<button type="button" class="cart__close" data-popup-close="cart">
+						<span class="visually-hidden">Close cart</span>
+						<span class="icon icon_close"></span>
+					</button>
+				</div>
+				<div class="cart__row cart__row_body">
+					<ul class="cart__list" data-text="Nothing here">
+						<li class="cart__item">
+							<article class="product-card">
+								<div class="product-card__prev">
+									<picture>
+										<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/card.jpg" alt="image" class="product-card__img" width="100" height="123" />
+									</picture>
+								</div>
+								<div class="product-card__content">
+									<a class="product-card__title" href="#">Dress</a>
+									<div class="product-card__size">S</div>
+									<div class="quantity">
+										<button class="quantity__btn" type="button">
+											<span class="visually-hidden">Minus one</span>
+											<span class="icon icon_minus"></span>
+										</button>
+										<input type="number" class="quantity__num" value="1" spellcheck="false" data-price="80" min="1" max="99" />
+										<button class="quantity__btn" type="button">
+											<span class="visually-hidden">Plus one</span>
+											<span class="icon icon_plus"></span>
+										</button>
+									</div>
+									<div class="product-card__price">80$</div>
+									<button class="product-card__delete" type="button">
+										<span class="visually-hidden">Delete</span>
+										<span class="icon icon_trash"></span>
+									</button>
+								</div>
+							</article>
+						</li>
+					</ul>
+				</div>
+				<div class="cart__row cart__row_footer">
+					<div class="cart__sum">Summary: <span class="cart__price">560</span>$</div>
+					<a href="#" class="btn btn_lg btn_outline">
+						<span class="btn__text">Checkout</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

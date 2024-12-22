@@ -1,0 +1,127 @@
+.faqs {
+	padding-top: 100px;
+	&__top {
+		margin-bottom: 18px;
+	}
+
+	&__btns {
+		display: flex;
+		gap: 24px;
+	}
+
+	&__bottom {
+		display: flex;
+		gap: 24px;
+	}
+
+	&__col {
+		flex: 1;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 12px
+	}
+
+	&__img {
+		position: sticky;
+		top: 12px;
+		border-radius: 16px;
+	}
+}
+
+.accordion {
+	max-width: 100%;
+	background-color: $sec-bg;
+	border-radius: 8px;
+	&__details {
+		position: relative;
+		appearance: none;
+		cursor: pointer;
+		user-select: none;
+		overflow: hidden;
+		border-radius: 8px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 16px;
+			width: 24px;
+			height: 24px;
+			background-color: $text-color;
+			mask-size: cover;
+			mask-position: center;
+			mask-repeat: no-repeat;
+			mask-image: url(../img/svgicons/faq-plus.svg);
+			-webkit-mask-image: url(../img/svgicons/faq-plus.svg);
+			transition-duration: 0.2s;
+			pointer-events: none;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 16px;
+			width: 24px;
+			height: 24px;
+			transform: translateY(-50%) translateX(24px);
+			background-color: $text-color;
+			mask-size: cover;
+			mask-position: center;
+			mask-repeat: no-repeat;
+			mask-image: url(../img/svgicons/faq-minus.svg);
+			-webkit-mask-image: url(../img/svgicons/faq-minus.svg);
+			opacity: 0;
+			transition-duration: 0.2s;
+			pointer-events: none;
+		}
+		&:hover {
+			@include hover() {
+				background-color: #F0F0F0;
+			}
+		}
+	}
+	&__summary {
+		padding: 16px;
+		list-style-type: '';
+		transition-duration: 0.3s;
+		padding-right: 40px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 130%;
+	}
+
+	&__content {
+		display: grid;
+		grid-template-rows: 0fr;
+		transition-duration: 0.3s;
+		padding: 0 16px;
+	}
+
+	&__body {
+		font-size: 16px;
+		line-height: 130%;
+		overflow: hidden;
+	}
+
+	&__details[open] + .accordion__content {
+		grid-template-rows: 1fr;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	&__details[open] {
+		&::after {
+			opacity: 1;
+			transform: translateX(0) translateY(-50%);
+		}
+		&::before {
+			opacity: 0;
+			transform: translateX(-24px) translateY(-50%);
+		}
+	}
+}

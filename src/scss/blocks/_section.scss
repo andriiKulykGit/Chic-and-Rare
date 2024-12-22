@@ -1,0 +1,27 @@
+.section {
+
+    &__inner {
+        margin-bottom: 24px;
+    }
+
+    &__headline {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 8px 24px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 1;
+        margin-bottom: 6px;
+    }
+
+    &__title {
+        font-weight: 700;
+        line-height: 1;
+        font-size: 48px;
+    }
+}
