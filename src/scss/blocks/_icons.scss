@@ -9,6 +9,9 @@
 	mask-position: center;
 	mask-repeat: no-repeat;
 	vertical-align: middle;
+	&_md {
+		--size: 32px;
+	}
 	&_large {
 		--size: 48px;
 	}

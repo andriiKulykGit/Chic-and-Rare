@@ -151,3 +151,11 @@
 		}
 	}
 }
+
+@media (hover: none) {
+	.card {
+		&__add {
+			display: block;
+		}
+	}
+}
