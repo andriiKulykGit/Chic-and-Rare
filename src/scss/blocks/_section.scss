@@ -24,4 +24,11 @@
         line-height: 1;
         font-size: 48px;
     }
+    &__cards {
+        &-wrapper {
+            &_hidden {
+                display: none;
+            }
+        }
+    }
 }

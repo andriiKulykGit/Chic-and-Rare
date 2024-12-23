@@ -18,8 +18,16 @@ function initSwitcher() {
 			resizeOverlay(switcher);
 
 			const area = switcher.dataset.area;
-			if (area === "categories") {
-				changeCategory();
+
+			switch (area) {
+				case "categories":
+					changeCategory();
+					break;
+				case "catalog":
+					changeCatalog();
+					break;
+				default:
+					break;
 			}
 		};
 
@@ -52,7 +60,6 @@ function resizeOverlay(switcher) {
 
 function changeCategory() {
 	if (isAnimating) return;
-
 	isAnimating = true;
 
 	const activeElm = document.querySelector(".categories__wrapper_active");
@@ -66,10 +73,7 @@ function changeCategory() {
 			duration: 0.2,
 			ease: "power3.out",
 			onComplete: () => {
-				activeElm.classList.remove("categories__wrapper_active");
-				activeElm.classList.add("categories__wrapper_hidden");
-				targetElm.classList.remove("categories__wrapper_hidden");
-				targetElm.classList.add("categories__wrapper_active");
+				toggleVisibility(activeElm, targetElm, "categories__wrapper_active", "categories__wrapper_hidden");
 				const targetCells = targetElm.querySelectorAll(".categories__cell");
 
 				gsap.fromTo(targetCells, {
@@ -88,6 +92,23 @@ function changeCategory() {
 			},
 		});
 	});
+}
+
+function changeCatalog() {
+	if (isAnimating) return;
+	isAnimating = true;
+
+	const activeElm = document.querySelector(".section__cards-wrapper_active");
+	const targetElm = document.querySelector(".section__cards-wrapper_hidden");
+
+	toggleVisibility(activeElm, targetElm, "section__cards-wrapper_active", "section__cards-wrapper_hidden");
+
+	isAnimating = false;
+}
+
+function toggleVisibility(active, target, activeClass, hiddenClass) {
+    active.classList.replace(activeClass, hiddenClass);
+    target.classList.replace(hiddenClass, activeClass);
 }
 
 export default initSwitcher;

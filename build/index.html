@@ -105,43 +105,543 @@
 									<span class="btn__text">show all</span>
 								</a>
 							</div>
-							<div class="switcher" data-area="@@area">
+							<div class="switcher" data-area="catalog">
 								<div class="switcher__overlay"></div>
 								<button class="switcher__btn switcher__btn_active" type="button">Women</button>
 								<button class="switcher__btn" type="button">Men</button>
 							</div>
 						</div>
 						<div class="section__cards">
-							<article class="card">
-								<div class="card__top">
-									<picture>
-										<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
-										<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
-									</picture>
-									<div class="sizes sizes_card draggable-scroll">
-										<ul class="sizes__list scroll-content">
-											<li class="sizes__item"><button class="sizes__btn">XXS</button></li>
-											<li class="sizes__item"><button class="sizes__btn">XS</button></li>
-											<li class="sizes__item"><button class="sizes__btn">S</button></li>
-											<li class="sizes__item"><button class="sizes__btn">M</button></li>
-											<li class="sizes__item"><button class="sizes__btn">L</button></li>
-											<li class="sizes__item"><button class="sizes__btn">XL</button></li>
-										</ul>
+							<div class="section__cards-wrapper section__cards-wrapper_active">
+								<div class="swiper catalog-swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
 									</div>
-									<button type="button" class="card__add" data-popup-open="pick-size">
-										<span class="visually-hidden">Add to&#160;cart</span>
-										<span class="icon icon_plus icon_md"></span>
-									</button>
+
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
 								</div>
-								<div class="card__bottom">
-									<div class="card__headline">
-										<a class="card__title" href="#">Dress</a>
-										<div class="card__price">80$</div>
+							</div>
+							<div class="section__cards-wrapper section__cards-wrapper_hidden">
+								<div class="swiper catalog-swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
+										<div class="swiper-slide">
+											<article class="card card_catalog">
+												<div class="card__top">
+													<picture>
+														<source srcset="./img/card.webp 1x, ./img/card@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/card.jpg 1x, ./img/card@2x.jpg 2x" type="image/jpeg" />
+														<img src="./img/card.jpg" alt="card image" class="card__img" width="260" height="328" />
+													</picture>
+													<div class="sizes sizes_card draggable-scroll">
+														<ul class="sizes__list scroll-content swiper-wrapper">
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XXS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XS</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">S</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">M</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">L</button></li>
+															<li class="sizes__item swiper-slide"><button class="sizes__btn">XL</button></li>
+														</ul>
+													</div>
+													<button type="button" class="card__add" data-popup-open="pick-size">
+														<span class="visually-hidden">Add to&#160;cart</span>
+														<span class="icon icon_plus icon_md"></span>
+													</button>
+												</div>
+												<div class="card__bottom">
+													<div class="card__headline">
+														<a class="card__title" href="#">Dress</a>
+														<div class="card__price">80$</div>
+													</div>
+													<div class="card__brand">ViTi</div>
+												</div>
+											</article>
+										</div>
 									</div>
-									<div class="card__brand">ViTi</div>
+
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
 								</div>
-							</article>
+							</div>
 						</div>
 					</div>
 				</section>

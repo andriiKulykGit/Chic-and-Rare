@@ -9,10 +9,77 @@
                     <span class="btn__text">show all</span>
                 </a>
             </div>
-            @@include('switcher.html')
+            @@include('switcher.html', {
+                'area': 'catalog'
+            })
         </div>
         <div class="section__cards">
-            @@include('card.html')
+            <div class="section__cards-wrapper section__cards-wrapper_active">
+                <div class="swiper catalog-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="section__cards-wrapper section__cards-wrapper_hidden">
+                <div class="swiper catalog-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('card.html')
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
